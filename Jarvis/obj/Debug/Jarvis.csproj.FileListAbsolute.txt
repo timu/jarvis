@@ -1,0 +1,39 @@
+C:\Users\timu\Desktop\Projects\Jarvis\Jarvis\bin\Bot Application1.dll.config
+C:\Users\timu\Desktop\Projects\Jarvis\Jarvis\bin\Bot Application1.dll
+C:\Users\timu\Desktop\Projects\Jarvis\Jarvis\bin\Bot Application1.pdb
+C:\Users\timu\Desktop\Projects\Jarvis\Jarvis\bin\Autofac.dll
+C:\Users\timu\Desktop\Projects\Jarvis\Jarvis\bin\Chronic.dll
+C:\Users\timu\Desktop\Projects\Jarvis\Jarvis\bin\Microsoft.Bot.Builder.dll
+C:\Users\timu\Desktop\Projects\Jarvis\Jarvis\bin\Microsoft.Bot.Connector.dll
+C:\Users\timu\Desktop\Projects\Jarvis\Jarvis\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+C:\Users\timu\Desktop\Projects\Jarvis\Jarvis\bin\Microsoft.Rest.ClientRuntime.dll
+C:\Users\timu\Desktop\Projects\Jarvis\Jarvis\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\timu\Desktop\Projects\Jarvis\Jarvis\bin\Newtonsoft.Json.dll
+C:\Users\timu\Desktop\Projects\Jarvis\Jarvis\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\timu\Desktop\Projects\Jarvis\Jarvis\bin\System.Net.Http.Formatting.dll
+C:\Users\timu\Desktop\Projects\Jarvis\Jarvis\bin\System.Web.Http.dll
+C:\Users\timu\Desktop\Projects\Jarvis\Jarvis\bin\System.Web.Http.WebHost.dll
+C:\Users\timu\Desktop\Projects\Jarvis\Jarvis\bin\Autofac.xml
+C:\Users\timu\Desktop\Projects\Jarvis\Jarvis\bin\Microsoft.Bot.Builder.xml
+C:\Users\timu\Desktop\Projects\Jarvis\Jarvis\bin\Microsoft.Bot.Connector.xml
+C:\Users\timu\Desktop\Projects\Jarvis\Jarvis\bin\Microsoft.IdentityModel.Protocol.Extensions.pdb
+C:\Users\timu\Desktop\Projects\Jarvis\Jarvis\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+C:\Users\timu\Desktop\Projects\Jarvis\Jarvis\bin\Microsoft.Rest.ClientRuntime.xml
+C:\Users\timu\Desktop\Projects\Jarvis\Jarvis\bin\Microsoft.WindowsAzure.Configuration.xml
+C:\Users\timu\Desktop\Projects\Jarvis\Jarvis\bin\Newtonsoft.Json.xml
+C:\Users\timu\Desktop\Projects\Jarvis\Jarvis\bin\System.IdentityModel.Tokens.Jwt.pdb
+C:\Users\timu\Desktop\Projects\Jarvis\Jarvis\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\timu\Desktop\Projects\Jarvis\Jarvis\bin\System.Net.Http.Formatting.xml
+C:\Users\timu\Desktop\Projects\Jarvis\Jarvis\bin\System.Web.Http.xml
+C:\Users\timu\Desktop\Projects\Jarvis\Jarvis\bin\System.Web.Http.WebHost.xml
+C:\Users\timu\Desktop\Projects\Jarvis\Jarvis\bin\ar\Microsoft.Bot.Builder.resources.dll
+C:\Users\timu\Desktop\Projects\Jarvis\Jarvis\bin\en\Microsoft.Bot.Builder.resources.dll
+C:\Users\timu\Desktop\Projects\Jarvis\Jarvis\bin\es\Microsoft.Bot.Builder.resources.dll
+C:\Users\timu\Desktop\Projects\Jarvis\Jarvis\bin\fa\Microsoft.Bot.Builder.resources.dll
+C:\Users\timu\Desktop\Projects\Jarvis\Jarvis\bin\fr\Microsoft.Bot.Builder.resources.dll
+C:\Users\timu\Desktop\Projects\Jarvis\Jarvis\bin\ja\Microsoft.Bot.Builder.resources.dll
+C:\Users\timu\Desktop\Projects\Jarvis\Jarvis\bin\ru\Microsoft.Bot.Builder.resources.dll
+C:\Users\timu\Desktop\Projects\Jarvis\Jarvis\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
+C:\Users\timu\Desktop\Projects\Jarvis\Jarvis\obj\Debug\Jarvis.csprojResolveAssemblyReference.cache
+C:\Users\timu\Desktop\Projects\Jarvis\Jarvis\obj\Debug\Bot Application1.dll
+C:\Users\timu\Desktop\Projects\Jarvis\Jarvis\obj\Debug\Bot Application1.pdb
