@@ -37,3 +37,47 @@ C:\Users\timu\Desktop\Projects\Jarvis\Jarvis\bin\zh-hans\Microsoft.Bot.Builder.r
 C:\Users\timu\Desktop\Projects\Jarvis\Jarvis\obj\Debug\Jarvis.csprojResolveAssemblyReference.cache
 C:\Users\timu\Desktop\Projects\Jarvis\Jarvis\obj\Debug\Bot Application1.dll
 C:\Users\timu\Desktop\Projects\Jarvis\Jarvis\obj\Debug\Bot Application1.pdb
+D:\Projects\jarvis\Jarvis\bin\Bot Application1.dll.config
+D:\Projects\jarvis\Jarvis\bin\Bot Application1.dll
+D:\Projects\jarvis\Jarvis\bin\Bot Application1.pdb
+D:\Projects\jarvis\Jarvis\bin\Autofac.dll
+D:\Projects\jarvis\Jarvis\bin\Chronic.dll
+D:\Projects\jarvis\Jarvis\bin\Microsoft.Bot.Builder.dll
+D:\Projects\jarvis\Jarvis\bin\Microsoft.Bot.Connector.dll
+D:\Projects\jarvis\Jarvis\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+D:\Projects\jarvis\Jarvis\bin\Microsoft.Rest.ClientRuntime.dll
+D:\Projects\jarvis\Jarvis\bin\Microsoft.WindowsAzure.Configuration.dll
+D:\Projects\jarvis\Jarvis\bin\Newtonsoft.Json.dll
+D:\Projects\jarvis\Jarvis\bin\RestSharp.dll
+D:\Projects\jarvis\Jarvis\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\Projects\jarvis\Jarvis\bin\System.Net.Http.Formatting.dll
+D:\Projects\jarvis\Jarvis\bin\System.Web.Http.dll
+D:\Projects\jarvis\Jarvis\bin\System.Web.Http.WebHost.dll
+D:\Projects\jarvis\Jarvis\bin\Autofac.xml
+D:\Projects\jarvis\Jarvis\bin\Microsoft.Bot.Builder.xml
+D:\Projects\jarvis\Jarvis\bin\Microsoft.Bot.Connector.xml
+D:\Projects\jarvis\Jarvis\bin\Microsoft.IdentityModel.Protocol.Extensions.pdb
+D:\Projects\jarvis\Jarvis\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+D:\Projects\jarvis\Jarvis\bin\Microsoft.Rest.ClientRuntime.xml
+D:\Projects\jarvis\Jarvis\bin\Microsoft.WindowsAzure.Configuration.xml
+D:\Projects\jarvis\Jarvis\bin\Newtonsoft.Json.xml
+D:\Projects\jarvis\Jarvis\bin\RestSharp.xml
+D:\Projects\jarvis\Jarvis\bin\System.IdentityModel.Tokens.Jwt.pdb
+D:\Projects\jarvis\Jarvis\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\Projects\jarvis\Jarvis\bin\System.Net.Http.Formatting.xml
+D:\Projects\jarvis\Jarvis\bin\System.Web.Http.xml
+D:\Projects\jarvis\Jarvis\bin\System.Web.Http.WebHost.xml
+D:\Projects\jarvis\Jarvis\bin\ar\Microsoft.Bot.Builder.resources.dll
+D:\Projects\jarvis\Jarvis\bin\en\Microsoft.Bot.Builder.resources.dll
+D:\Projects\jarvis\Jarvis\bin\es\Microsoft.Bot.Builder.resources.dll
+D:\Projects\jarvis\Jarvis\bin\fa\Microsoft.Bot.Builder.resources.dll
+D:\Projects\jarvis\Jarvis\bin\fr\Microsoft.Bot.Builder.resources.dll
+D:\Projects\jarvis\Jarvis\bin\ja\Microsoft.Bot.Builder.resources.dll
+D:\Projects\jarvis\Jarvis\bin\ru\Microsoft.Bot.Builder.resources.dll
+D:\Projects\jarvis\Jarvis\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
+D:\Projects\jarvis\Jarvis\obj\Debug\Bot Application1.dll
+D:\Projects\jarvis\Jarvis\obj\Debug\Bot Application1.pdb
+D:\Projects\jarvis\Jarvis\bin\Octokit.dll
+D:\Projects\jarvis\Jarvis\bin\Octokit.pdb
+D:\Projects\jarvis\Jarvis\bin\Octokit.xml
+D:\Projects\jarvis\Jarvis\obj\Debug\Jarvis.csprojResolveAssemblyReference.cache

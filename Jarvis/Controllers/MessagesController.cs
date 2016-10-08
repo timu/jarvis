@@ -1,18 +1,32 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
+using System.Web;
 using System.Web.Http;
 using System.Web.Http.Description;
 using Microsoft.Bot.Connector;
+using Microsoft.Cognitive.LUIS;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using RestSharp;
+using RestSharp.Extensions;
 
 namespace Jarvis
 {
     [BotAuthentication]
     public class MessagesController : ApiController
     {
+        private static Lazy<Dictionary<string, Type>> intentExecutors =
+            new Lazy<Dictionary<string, Type>>(() => AppDomain.CurrentDomain.GetAssemblies()
+                                                 .SelectMany(x => x.GetTypes())
+                                                 .Where(
+                                                     x =>
+                                                             x.GetAttribute<IntentExecutorAttribute>() != null)
+                                                 .ToDictionary(x => x.GetAttribute<IntentExecutorAttribute>().Name, x => x));
+
         /// <summary>
         /// POST: api/Messages
         /// Receive a message from a user and reply to it
@@ -23,13 +37,49 @@ namespace Jarvis
             {
                 ConnectorClient connector = new ConnectorClient(new Uri(activity.ServiceUrl));
 
-                activity.Text.Replace("@jarvis2", "");
+                activity.Text = activity.Text.Replace("@jarvis2", "");
 
-                // calculate something for us to return
-                int length = (activity.Text ?? string.Empty).Length;
+                var client = new RestClient("https://api.projectoxford.ai/luis/v1/application?id=02139510-4d03-4abe-bf4d-fac6c4b00090&subscription-key=6d53353c60f047f1b7761f51d721df64&q=" + HttpUtility.UrlEncode(activity.Text) + "&timezoneOffset=0.0");
+                var request = new RestRequest(Method.GET);
+                request.AddHeader("cache-control", "no-cache");
+                IRestResponse webresponse = client.Execute(request);
 
+                var data = JsonConvert.DeserializeObject<JToken>(webresponse.Content);
+                var luisResult = new LuisResult(data);
+                foreach (var intent in luisResult.Intents)
+                {
+                    //Activity nureply = activity.CreateReply(intent.Name + intent.Score);
+                    //await connector.Conversations.ReplyToActivityAsync(nureply);
+                }
+
+
+                var firstIntent = luisResult.Intents.FirstOrDefault();
+                if (firstIntent == null)
+                {
+                    Activity nureply = activity.CreateReply($"You sent {activity.Text} which was not understood");
+                    await connector.Conversations.ReplyToActivityAsync(nureply);
+                    return Request.CreateResponse(HttpStatusCode.OK);
+                }
+
+                Type intentType;
+                if (!intentExecutors.Value.TryGetValue(firstIntent.Name, out intentType))
+                {
+                    Activity nureply = activity.CreateReply($"You sent {activity.Text} which was not understood");
+                    await connector.Conversations.ReplyToActivityAsync(nureply);
+                    return Request.CreateResponse(HttpStatusCode.OK);
+                }
+                string replyText;
+                try
+                {
+                    var intentExecutor = (IIntentExecutor) Activator.CreateInstance(intentType);
+                    replyText = intentExecutor.Execute(firstIntent, activity);
+                }
+                catch (Exception e)
+                {
+                    replyText = e.Message + e.StackTrace;
+                }
                 // return our reply to the user
-                Activity reply = activity.CreateReply($"You sent {activity.Text} which was {length} characters");
+                Activity reply = activity.CreateReply(replyText);
                 await connector.Conversations.ReplyToActivityAsync(reply);
                 var response = Request.CreateResponse(HttpStatusCode.OK);
                 return response;
