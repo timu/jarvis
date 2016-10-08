@@ -22,19 +22,20 @@ namespace Jarvis
             if (activity.Type == ActivityTypes.Message && activity.Text.Contains("@jarvis2"))
             {
                 ConnectorClient connector = new ConnectorClient(new Uri(activity.ServiceUrl));
+
+                activity.Text.Replace("@jarvis2", "");
+
                 // calculate something for us to return
                 int length = (activity.Text ?? string.Empty).Length;
 
                 // return our reply to the user
                 Activity reply = activity.CreateReply($"You sent {activity.Text} which was {length} characters");
                 await connector.Conversations.ReplyToActivityAsync(reply);
+                var response = Request.CreateResponse(HttpStatusCode.OK);
+                return response;
             }
-            else
-            {
-                HandleSystemMessage(activity);
-            }
-            var response = Request.CreateResponse(HttpStatusCode.OK);
-            return response;
+
+            return null;
         }
 
         private Activity HandleSystemMessage(Activity message)
